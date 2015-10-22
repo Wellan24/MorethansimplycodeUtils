@@ -8,7 +8,7 @@ This is a "framework". This project contains classes to automatize some task. Yo
 *com.morethansimplycode.formatting* <br />
 *com.morethansimplycode.formatting.formatters*
 
-This package contains a class that wrap a StringBuilder, called Stringformatter, which adds a appendFormat method. appendFormat method is a C# like string format function.
+This package contains a class that wrap a StringBuilder, called StringFormatter, which adds a appendFormat method. appendFormat method is a C# like string format function.
 
 #### How to format a String
 
@@ -43,4 +43,25 @@ StringFormatter.format("{0: N N N N N SN N}", new Person("John", "Doe")); // Out
 ```
 > **Tip:** You can pass a CustomFormatter to choose how the arg will be formatted.
 
- And remember StringFormatter.format() calls the toString() method of the args if they are not Formattable.
+And remember StringFormatter.format() calls the toString() method of the args if they are not Formattable.
+
+
+## Functions
+
+**_Packages:_** <br />
+*com.morethansimplycode.functions* <br />
+
+This package have three classes: Checkout, Process and Processor.
+
+**Checkout**
+
+This class defines a check method, which asks for an Object to check and return a boolean indicating id is valid or not. In the future generics will be enabled for it.
+
+**Process**
+
+This class defines a process method, in order to process the given Object and returning a result. In the future generics will be enabled for it.
+
+**Processor**
+
+A class to check an Object and if its valid processit. It has a weight field, to use it to order in case of have a Collection or Array of Processor. In the future this will be comparable.
+
