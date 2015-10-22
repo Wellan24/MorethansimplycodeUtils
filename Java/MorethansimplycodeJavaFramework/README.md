@@ -57,7 +57,7 @@ This package have three classes: Checkout, Process and Processor.
 
 **Checkout**
 
-This class defines a check method, which asks for an Object to check and return a boolean indicating id is valid or not. In the future generics will be enabled for it.
+This class defines a check method, which asks for an Object to check and return a boolean indicating if is valid or not. In the future generics will be enabled for it.
 
 **Process**
 
