@@ -53,7 +53,7 @@ And remember StringFormatter.format() calls the toString() method of the args if
 
 This package have three classes: Checkout, Process and Processor.
 
-#### Classes
+### Classes:
 
 **Checkout**
 
