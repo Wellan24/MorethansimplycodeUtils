@@ -53,6 +53,8 @@ And remember StringFormatter.format() calls the toString() method of the args if
 
 This package have three classes: Checkout, Process and Processor.
 
+#### Classes
+
 **Checkout**
 
 This class defines a check method, which asks for an Object to check and return a boolean indicating id is valid or not. In the future generics will be enabled for it.
