@@ -67,3 +67,4 @@ This class defines a process method, in order to process the given Object and re
 
 A class to check an Object and if its valid processit. It has a weight field, to use it to order in case of have a Collection or Array of Processor. In the future this will be comparable.
 
+> **Tip:** If you have to parse, validate, or process some data in different ways depending on a condition, you can create an Array (or ArrayList if you want to dinamically add or remove) of Processors, difining the condition with a lambda as the checker, another lambda as the process and a weight in case of be valid to multiple conditions. In the future we will make a class that will automatically store Processors and receive Objects to process.
