@@ -1,4 +1,4 @@
-﻿using Cartif.Collections;
+﻿using SmartCodingHub.Collections;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,13 +14,13 @@ namespace Cartif.Logs
     ///------------------------------------------------------------------------------------------------------
     public class TipoLog : ConfigurationElement
     {
-        private static CartifPropertyList<String, TipoLog> tipos;   /* The tipos */
+        private static SmartCodingHubPropertyList<String, TipoLog> tipos;   /* The tipos */
 
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Static constructor. </summary>
         /// <remarks> Oscvic, 2016-01-12. </remarks>
         ///--------------------------------------------------------------------------------------------------
-        static TipoLog() { tipos = new CartifPropertyList<String, TipoLog>(tipo => tipo.Nombre); }
+        static TipoLog() { tipos = new SmartCodingHubPropertyList<String, TipoLog>(tipo => tipo.Nombre); }
 
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Adds a tipo log. </summary>

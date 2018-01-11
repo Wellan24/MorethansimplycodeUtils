@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 
-namespace Cartif.Collections
+namespace SmartCodingHub.Collections
 {
     ///------------------------------------------------------------------------------------------------------
     /// <summary> A hash map utilities. </summary>

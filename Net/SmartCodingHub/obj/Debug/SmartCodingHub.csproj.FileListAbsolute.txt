@@ -1,0 +1,13 @@
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\SimpleDialog.InputBox.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\Cartif.Forms.ParentForm.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\Cartif.UserControls.RichTextControl.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\Cartif.UserControls.Slide.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\Cartif.UserControls.SwitchControl.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\Cartif.UserControls.Tab.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\Cartif.UserControls.TabItem.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\Cartif.Forms.Toast.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\Cartif.Properties.Resources.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\Cartif.Test.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\Cartif.CustomControls.Toast.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\SmartCodingHub.csproj.GenerateResource.Cache
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub\obj\Debug\SmartCodingHub.csproj.CoreCompileInputs.cache

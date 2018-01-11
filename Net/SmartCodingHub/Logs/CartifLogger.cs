@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading;
 
-using Cartif.Collections;
+using SmartCodingHub.Collections;
 using Cartif.Extensions;
 
 namespace Cartif.Logs
@@ -21,7 +21,7 @@ namespace Cartif.Logs
         // Candidatos a pasar a la configuracion
         public static readonly String RaizLogs = "C:/Logs/";    /* . */
 
-        private ConcurrentCartifDictionary<TipoLog, ConcurrentQueue<Log>> ColaLogs = new ConcurrentCartifDictionary<TipoLog, ConcurrentQueue<Log>>();   /* The cola logs */
+        private ConcurrentSmartCodingHubDictionary<TipoLog, ConcurrentQueue<Log>> ColaLogs = new ConcurrentSmartCodingHubDictionary<TipoLog, ConcurrentQueue<Log>>();   /* The cola logs */
         private List<Logger> loggers;   /* The loggers */
         private int NumeroLogs = 0; /* The numero logs */
         private Thread HiloLogs;    /* The hilo logs */

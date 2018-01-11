@@ -1,0 +1,17 @@
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\bin\Debug\Cartif35.exe.config
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\bin\Debug\Cartif35.exe
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\bin\Debug\Cartif35.pdb
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\SimpleDialog.InputBox.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif.Forms.ParentForm.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif.UserControls.RichTextControl.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif.UserControls.Slide.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif.UserControls.SwitchControl.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif.UserControls.Tab.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif.UserControls.TabItem.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif.Forms.Toast.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif.Properties.Resources.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif.Test.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\SmartCodingHub35.csproj.GenerateResource.Cache
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\SmartCodingHub35.csproj.CoreCompileInputs.cache
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif35.exe
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub35\obj\Debug\Cartif35.pdb

@@ -12,7 +12,7 @@ namespace Cartif.XamlClasses
     {
         public static Messenger Default { get; } = new Messenger();
 
-        private CartifDictionary<String, Action<Object>[]> registered = new CartifDictionary<String, Action<Object>[]>(4);
+        private SmartCodingHubDictionary<String, Action<Object>[]> registered = new SmartCodingHubDictionary<String, Action<Object>[]>(4);
 
         public void Register(String key, Action<Object> callback)
         {

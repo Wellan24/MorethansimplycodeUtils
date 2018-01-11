@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 
 
-namespace Cartif.Collections
+namespace SmartCodingHub.Collections
 {
     ///------------------------------------------------------------------------------------------------------
     /// <summary> A node. </summary>

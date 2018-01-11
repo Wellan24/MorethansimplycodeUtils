@@ -1,4 +1,4 @@
-﻿using Cartif.Collections;
+﻿using SmartCodingHub.Collections;
 using Cartif.Extensions;
 using System;
 using System.Diagnostics;
@@ -9,7 +9,7 @@ namespace Cartif.Util
     /// <summary> A cartif stopwatch. </summary>
     /// <remarks> Oscvic, 2016-01-18. </remarks>
     ///------------------------------------------------------------------------------------------------------
-    public class CartifStopwatch : CartifDictionary<String, Stopwatch>
+    public class CartifStopwatch : SmartCodingHubDictionary<String, Stopwatch>
     {
         #region Properties
 

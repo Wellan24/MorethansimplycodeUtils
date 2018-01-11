@@ -80,8 +80,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collections\CartifPropertyList.cs" />
-    <Compile Include="Collections\ConcurrentCartifDictionary.cs" />
+    <Compile Include="Collections\SmartCodingHubPropertyList.cs" />
+    <Compile Include="Collections\ConcurrentSmartCodingHubDictionary.cs" />
     <Compile Include="Collections\TreeNode.cs" />
     <Compile Include="CustomControls\AbstractButton.cs">
       <SubType>Component</SubType>
@@ -238,7 +238,7 @@
     <Compile Include="Threading\QueuedThread.cs" />
     <Compile Include="Threading\QueuedThreadPool.cs" />
     <Compile Include="Util\DateTimeUtils.cs" />
-    <Compile Include="Collections\CartifDictionary.cs" />
+    <Compile Include="Collections\SmartCodingHubDictionary.cs" />
     <Compile Include="Util\Stack.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Test.cs">

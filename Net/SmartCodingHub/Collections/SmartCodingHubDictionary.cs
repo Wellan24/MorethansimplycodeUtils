@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Cartif.Collections
+namespace SmartCodingHub.Collections
 {
     ///------------------------------------------------------------------------------------------------------
     /// <summary> -----------------------------------------------------------------
@@ -13,7 +13,7 @@ namespace Cartif.Collections
     /// <typeparam name="K"> Generic type parameter. </typeparam>
     /// <typeparam name="V"> Generic type parameter. </typeparam>
     ///------------------------------------------------------------------------------------------------------
-    public class CartifDictionary<K, V> : Dictionary<K, V>
+    public class SmartCodingHubDictionary<K, V> : Dictionary<K, V>
     {
 
         //Dictionary<K, V> internalCache;
@@ -46,20 +46,20 @@ namespace Cartif.Collections
         /// <summary> Default constructor. </summary>
         /// <remarks> Oscvic, 2016-01-18. </remarks>
         ///--------------------------------------------------------------------------------------------------
-        public CartifDictionary() { }
+        public SmartCodingHubDictionary() { }
 
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Constructor. </summary>
         /// <remarks> Oscvic, 2016-01-18. </remarks>
         /// <param name="capacity"> The capacity. </param>
         ///--------------------------------------------------------------------------------------------------
-        public CartifDictionary(int capacity) : base(capacity) { }
+        public SmartCodingHubDictionary(int capacity) : base(capacity) { }
 
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Constructor. </summary>
         /// <remarks> Oscvic, 2016-01-18. </remarks>
         /// <param name="initialColection"> The initial colection. </param>
         ///--------------------------------------------------------------------------------------------------
-        public CartifDictionary(IDictionary<K, V> initialColection) : base(initialColection) { }
+        public SmartCodingHubDictionary(IDictionary<K, V> initialColection) : base(initialColection) { }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 
-namespace Cartif.Collections
+namespace SmartCodingHub.Collections
 {
     ///------------------------------------------------------------------------------------------------------
     /// <summary> List of cartif properties. </summary>
@@ -12,7 +12,7 @@ namespace Cartif.Collections
     /// <typeparam name="K"> Generic type parameter. </typeparam>
     /// <typeparam name="V"> Generic type parameter. </typeparam>
     ///------------------------------------------------------------------------------------------------------
-    public class CartifPropertyList<K, V> : CartifDictionary<K, V>
+    public class SmartCodingHubPropertyList<K, V> : SmartCodingHubDictionary<K, V>
     {
         private readonly Func<V, K> keySelector;    /* The key selector */
 
@@ -21,7 +21,7 @@ namespace Cartif.Collections
         /// <remarks> Oscvic, 2016-01-05. </remarks>
         /// <param name="keySelector"> The key selector. </param>
         ///--------------------------------------------------------------------------------------------------
-        public CartifPropertyList(Func<V, K> keySelector) { this.keySelector = keySelector; }
+        public SmartCodingHubPropertyList(Func<V, K> keySelector) { this.keySelector = keySelector; }
 
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Constructor. </summary>
@@ -29,7 +29,7 @@ namespace Cartif.Collections
         /// <param name="capacity">    The capacity. </param>
         /// <param name="keySelector"> The key selector. </param>
         ///--------------------------------------------------------------------------------------------------
-        public CartifPropertyList(int capacity, Func<V, K> keySelector) : base(capacity) { this.keySelector = keySelector; }
+        public SmartCodingHubPropertyList(int capacity, Func<V, K> keySelector) : base(capacity) { this.keySelector = keySelector; }
 
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Constructor. </summary>
@@ -37,7 +37,7 @@ namespace Cartif.Collections
         /// <param name="initialColection"> The initial colection. </param>
         /// <param name="keySelector">      The key selector. </param>
         ///--------------------------------------------------------------------------------------------------
-        public CartifPropertyList(List<V> initialColection, Func<V, K> keySelector) : base(initialColection.ToDictionary(keySelector)) { this.keySelector = keySelector; }
+        public SmartCodingHubPropertyList(List<V> initialColection, Func<V, K> keySelector) : base(initialColection.ToDictionary(keySelector)) { this.keySelector = keySelector; }
 
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Indexer to get or set items within this collection using array index syntax. </summary>

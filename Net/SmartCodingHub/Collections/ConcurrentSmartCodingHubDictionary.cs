@@ -1,7 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using System.Collections.Generic;
 
-namespace Cartif.Collections
+namespace SmartCodingHub.Collections
 {
     ///------------------------------------------------------------------------------------------------------
     /// <summary> A dictionary that handles null. </summary>
@@ -9,7 +9,7 @@ namespace Cartif.Collections
     /// <typeparam name="K"> Generic type parameter. </typeparam>
     /// <typeparam name="V"> Generic type parameter. </typeparam>
     ///------------------------------------------------------------------------------------------------------
-    public class ConcurrentCartifDictionary<K, V> : ConcurrentDictionary<K, V>
+    public class ConcurrentSmartCodingHubDictionary<K, V> : ConcurrentDictionary<K, V>
     {
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Indexer to get or set items within this collection using array index syntax. </summary>
@@ -41,21 +41,21 @@ namespace Cartif.Collections
         /// <summary> Default constructor. </summary>
         /// <remarks> Oscvic, 2016-01-18. </remarks>
         ///--------------------------------------------------------------------------------------------------
-        public ConcurrentCartifDictionary() { }
+        public ConcurrentSmartCodingHubDictionary() { }
 
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Constructor. </summary>
         /// <remarks> Oscvic, 2016-01-18. </remarks>
         /// <param name="capacity"> The capacity. </param>
         ///--------------------------------------------------------------------------------------------------
-        public ConcurrentCartifDictionary(int capacity) : base(1, capacity) { }
+        public ConcurrentSmartCodingHubDictionary(int capacity) : base(1, capacity) { }
 
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Constructor. </summary>
         /// <remarks> Oscvic, 2016-01-18. </remarks>
         /// <param name="initialColection"> The initial colection. </param>
         ///--------------------------------------------------------------------------------------------------
-        public ConcurrentCartifDictionary(IDictionary<K, V> initialColection) : base(initialColection) { }
+        public ConcurrentSmartCodingHubDictionary(IDictionary<K, V> initialColection) : base(initialColection) { }
 
         ///--------------------------------------------------------------------------------------------------
         /// <summary> Adds key. </summary>

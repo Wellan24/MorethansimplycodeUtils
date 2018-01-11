@@ -1,0 +1,4 @@
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub.Persistence\obj\Debug\SmartCodingHub.Persistence.csprojResolveAssemblyReference.cache
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub.Persistence\obj\Debug\Cartif.Persistence.Properties.Resources.resources
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub.Persistence\obj\Debug\SmartCodingHub.Persistence.csproj.GenerateResource.Cache
+C:\Users\oscar\Documents\Visual Studio 2017\Projects\MorethansimplycodeUtils\Net\SmartCodingHub.Persistence\obj\Debug\SmartCodingHub.Persistence.csproj.CoreCompileInputs.cache

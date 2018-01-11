@@ -4,7 +4,7 @@
 //using System.Text;
 //
 
-//namespace Cartif.Collections
+//namespace SmartCodingHub.Collections
 //{
 //    class TreeNode<K,V> : Node<K,V> {
 //        TreeNode<K,V> parent;  // red-black tree links

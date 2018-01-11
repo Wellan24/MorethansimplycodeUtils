@@ -6,7 +6,7 @@
 //
 //using Cartif.Extensions;
 
-//namespace Cartif.Collections
+//namespace SmartCodingHub.Collections
 //{
 //    [Serializable]
 //    public class HashMap<K, V>
