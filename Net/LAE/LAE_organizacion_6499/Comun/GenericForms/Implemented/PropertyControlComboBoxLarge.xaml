@@ -1,0 +1,22 @@
+﻿<gf:PropertyControl x:Class="GenericForms.Implemented.PropertyControlComboBoxLarge"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:gf="clr-namespace:GenericForms.Abstract" xmlns:local="clr-namespace:GenericForms.Implemented"
+        mc:Ignorable="d" Background="White">
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Label x:Name="label" Grid.Row="0" Content="Nombre:" HorizontalAlignment="Left"
+                VerticalAlignment="Top" FontWeight="Bold" Margin="4,4,0,0" FontSize="12" />
+        <DockPanel x:Name="panel" Grid.Row="1" Height="28" Margin="10,4,4,0" VerticalAlignment="Top">
+            <ComboBox x:Name="innerContent" Width="auto" Height="auto" FontSize="12" FontWeight="Normal"></ComboBox>
+        </DockPanel>
+        <Label x:Name="mensaje" Content="Correcto." Grid.Row="2" Margin="0,0,0,0" VerticalAlignment="Top"
+                Padding="2,0,0,0" FontSize="10.667" Foreground="Red" Visibility="Hidden" />
+    </Grid>
+</gf:PropertyControl>

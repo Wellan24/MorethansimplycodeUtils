@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="LAE.Biomasa.Controles.MedicionHumedad3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:LAE.Biomasa.Controles"
+        mc:Ignorable="d" xmlns:UControl="clr-namespace:LAE.Biomasa.Controles">
+    <Grid>
+        <GroupBox Header="Medición Humedad3">
+            <StackPanel>
+                <Button Content="Borrar Medición" Click="BorrarMedicion_Click" />
+                <UControl:ControlHumedad3 x:Name="Prueba" />
+                <Button Content="Añadir/Eliminar CCI" Click="AddDeleteCCI_Click" x:Name="botonCCI" />
+                <UControl:ControlHumedad3 x:Name="CCI" Visibility="Collapsed" />
+                <UControl:ControlHumedad3Calculo x:Name="CCIAceptacion" Visibility="Collapsed" />
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>

@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioWebLAE", "ServicioWebLAE\ServicioWebLAE.csproj", "{9C677609-DB42-4835-9E30-6CC113338325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZScripts", "Scripts\ZScripts.csproj", "{4527114C-769E-459D-9EE4-90112385647F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAE", "LAE\LAE.csproj", "{61DD3713-C7CF-4AD9-A001-2D2700148B45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{6961340D-6C6A-46EF-8187-9EA139B5CDAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Word-Test", "Word-Test\Word-Test.csproj", "{60DB73A3-4590-49E6-99EA-67974C645978}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C677609-DB42-4835-9E30-6CC113338325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C677609-DB42-4835-9E30-6CC113338325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C677609-DB42-4835-9E30-6CC113338325}.Debug|x64.ActiveCfg = Debug|x64
+		{9C677609-DB42-4835-9E30-6CC113338325}.Debug|x64.Build.0 = Debug|x64
+		{9C677609-DB42-4835-9E30-6CC113338325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C677609-DB42-4835-9E30-6CC113338325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C677609-DB42-4835-9E30-6CC113338325}.Release|x64.ActiveCfg = Release|x64
+		{9C677609-DB42-4835-9E30-6CC113338325}.Release|x64.Build.0 = Release|x64
+		{4527114C-769E-459D-9EE4-90112385647F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4527114C-769E-459D-9EE4-90112385647F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4527114C-769E-459D-9EE4-90112385647F}.Debug|x64.ActiveCfg = Debug|x64
+		{4527114C-769E-459D-9EE4-90112385647F}.Debug|x64.Build.0 = Debug|x64
+		{4527114C-769E-459D-9EE4-90112385647F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4527114C-769E-459D-9EE4-90112385647F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4527114C-769E-459D-9EE4-90112385647F}.Release|x64.ActiveCfg = Release|x64
+		{4527114C-769E-459D-9EE4-90112385647F}.Release|x64.Build.0 = Release|x64
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Debug|x64.ActiveCfg = Debug|x64
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Debug|x64.Build.0 = Debug|x64
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Release|x64.ActiveCfg = Release|x64
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Release|x64.Build.0 = Release|x64
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Debug|x64.ActiveCfg = Debug|x64
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Debug|x64.Build.0 = Debug|x64
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Release|x64.ActiveCfg = Release|x64
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Release|x64.Build.0 = Release|x64
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Debug|x64.Build.0 = Debug|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Release|x64.ActiveCfg = Release|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://astrea:8085/tfs/dsi
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Scripts\\ZScripts.csproj
+		SccProjectName1 = Scripts
+		SccLocalPath1 = Scripts
+		SccProjectUniqueName2 = ServicioWebLAE\\ServicioWebLAE.csproj
+		SccProjectName2 = ServicioWebLAE
+		SccLocalPath2 = ServicioWebLAE
+		SccProjectUniqueName3 = LAE\\LAE.csproj
+		SccProjectName3 = LAE
+		SccLocalPath3 = LAE
+		SccProjectUniqueName4 = Test\\Test.csproj
+		SccProjectName4 = Test
+		SccLocalPath4 = Test
+		SccProjectUniqueName5 = Word-Test\\Word-Test.csproj
+		SccProjectName5 = Word-Test
+		SccLocalPath5 = Word-Test
+	EndGlobalSection
+EndGlobal

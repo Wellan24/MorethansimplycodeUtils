@@ -1,0 +1,50 @@
+﻿<Controls:MetroWindow x:Class="LAE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:LAE"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900"
+        WindowCloseButtonStyle="{StaticResource MetroWindowCloseButtonStyle}" TitleCaps="False" Padding="-1">
+    <Grid Background="#323232">
+        <TabControl BorderThickness="0" TabStripPlacement="Left" Background="WhiteSmoke"
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <!--<TabControl.Resources>
+                <Style TargetType="{x:Type TabItem}" BasedOn="{StaticResource MetroTabItem}">
+
+                </Style>
+                <Style TargetType="{x:Type TabPanel}">
+                    <Setter Property="Background" Value="#dddddd"></Setter>
+                </Style>
+            </TabControl.Resources>-->
+            <TabItem Header="Home">
+                <!--<Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Margin="10,40,10,0">
+                        <Button Content="menu1"></Button>
+                        <Button Content="menu2"></Button>
+                        <Button Content="menu3"></Button>
+                        <Button Content="menu4"></Button>
+                        <Button Content="menu5"></Button>
+                        <Button Content="menu6"></Button>
+                        <ListBox Margin="0,10,0,0">
+                            <ListBoxItem Content="menu1"></ListBoxItem>
+                            <ListBoxItem Content="menu2"></ListBoxItem>
+                            <ListBoxItem Content="menu3"></ListBoxItem>
+                            <ListBoxItem Content="menu4"></ListBoxItem>
+                            <ListBoxItem Content="menu5"></ListBoxItem>
+                            <ListBoxItem Content="menu6"></ListBoxItem>
+                        </ListBox>
+                    </StackPanel>
+                </Grid>-->
+            </TabItem>
+            <TabItem Header="Experimentos" />
+            <TabItem Header="Gestión CRM" />
+            <TabItem Header="Ofertas" />
+        </TabControl>
+
+    </Grid>
+</Controls:MetroWindow>

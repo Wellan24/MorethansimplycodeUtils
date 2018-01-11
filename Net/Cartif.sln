@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartif", "Cartif\Cartif.csproj", "{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartifXaml", "CartifXaml\CartifXaml.csproj", "{C0631D9A-59E4-46BA-9211-654060C6B37F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartif.Persistence", "Cartif.Persistence\Cartif.Persistence.csproj", "{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartif35", "Cartif35\Cartif35.csproj", "{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}.Debug|x86.ActiveCfg = Debug|x86
+		{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}.Debug|x86.Build.0 = Debug|x86
+		{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}.Release|x86.ActiveCfg = Release|x86
+		{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}.Release|x86.Build.0 = Release|x86
+		{C0631D9A-59E4-46BA-9211-654060C6B37F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0631D9A-59E4-46BA-9211-654060C6B37F}.Debug|x86.ActiveCfg = Debug|x86
+		{C0631D9A-59E4-46BA-9211-654060C6B37F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0631D9A-59E4-46BA-9211-654060C6B37F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0631D9A-59E4-46BA-9211-654060C6B37F}.Release|x86.ActiveCfg = Release|x86
+		{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}.Debug|x86.ActiveCfg = Debug|x86
+		{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}.Debug|x86.Build.0 = Debug|x86
+		{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}.Release|x86.ActiveCfg = Release|x86
+		{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}.Release|x86.Build.0 = Release|x86
+		{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}.Debug|x86.ActiveCfg = Debug|x86
+		{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}.Debug|x86.Build.0 = Debug|x86
+		{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}.Release|x86.ActiveCfg = Release|x86
+		{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://astrea:8085/tfs/dsi
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Cartif\\Cartif.csproj
+		SccProjectName1 = Cartif
+		SccLocalPath1 = Cartif
+		SccProjectUniqueName2 = CartifXaml\\CartifXaml.csproj
+		SccProjectName2 = CartifXaml
+		SccLocalPath2 = CartifXaml
+		SccProjectUniqueName3 = Cartif.Persistence\\Cartif.Persistence.csproj
+		SccProjectName3 = Cartif.Persistence
+		SccLocalPath3 = Cartif.Persistence
+		SccProjectUniqueName4 = Cartif35\\Cartif35.csproj
+		SccProjectName4 = Cartif35
+		SccLocalPath4 = Cartif35
+	EndGlobalSection
+EndGlobal

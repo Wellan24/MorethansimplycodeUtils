@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="GUI.Controls.ControlPeticion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:GUI.Controls" xmlns:gf="clr-namespace:GenericForms.Implemented"
+        xmlns:UserControl="clr-namespace:GUI.Controls" mc:Ignorable="d" x:Name="UCPeticion">
+    <Grid x:Name="root">
+        <StackPanel>
+            <GroupBox Header="Cliente">
+                <gf:TypePanel x:Name="panelPeticionCliente"/>                
+            </GroupBox>
+            <GroupBox Header="Descripción">
+                <StackPanel>
+                    <gf:TypePanel x:Name="panelPeticionTomaMuestra" />
+                    <Separator />
+                    <UserControl:ControlTipoMuestra x:Name="UCTipoMuestra" />
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Parámetros">
+                <UserControl:ControlLineaParametro x:Name="UCLineaParametro" />
+            </GroupBox>
+            <GroupBox Header="Condiciones">
+                <gf:TypePanel x:Name="panelPeticionCondiciones" />
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</UserControl>

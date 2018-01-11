@@ -1,0 +1,11 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
+        x:Class="GenericForms.Implemented.TypeGrid" Background="White" x:Name="ThisControl">
+    <Grid x:Name="Layout">
+        <DataGrid x:Name="dataGrid" Grid.Row="0" VerticalAlignment="Stretch" SelectionMode="Single"
+                IsReadOnly="True" SelectedItem="{Binding SelectedItem, ElementName=ThisControl, Mode=TwoWay}"
+                AutoGenerateColumns="False" HorizontalAlignment="Stretch" FontFamily="Segoe UI" />
+    </Grid>
+</UserControl>

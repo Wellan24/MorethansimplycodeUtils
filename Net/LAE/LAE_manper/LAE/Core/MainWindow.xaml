@@ -1,0 +1,78 @@
+﻿<Controls:MetroWindow x:Class="LAE.Core.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Pages="clr-namespace:GUI.Pages"
+        xmlns:gf="clr-namespace:GenericForms.Implemented;assembly=LAE.Comun"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Converters="clr-namespace:MahApps.Metro.Converters;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:LAE.Core"
+        xmlns:Behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro" mc:Ignorable="d"
+        Title="GestLAE" Height="950" Width="1200" BorderThickness="1" BorderBrush="Gray"
+        ResizeMode="CanResizeWithGrip" WindowCloseButtonStyle="{StaticResource MetroWindowCloseButtonStyle}"
+        WindowMaxButtonStyle="{StaticResource MetroWindowMaxMinButtonStyle}"
+        WindowMinButtonStyle="{StaticResource MetroWindowMaxMinButtonStyle}" TitleCaps="False"
+        MouseDown="MetroWindow_MouseDown" Icon="pack://application:,,,/LAE.Comun;component/images/lae.png"
+        Loaded="MetroWindow_Loaded">
+    <Controls:MetroWindow.Style>
+        <Style TargetType="{x:Type Controls:MetroWindow}">
+            <Setter Property="IconTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Controls:MultiFrameImage Width="{TemplateBinding Width}" Margin="2"
+                                Height="{TemplateBinding Height}"
+                                RenderOptions.BitmapScalingMode="{Binding IconBitmapScalingMode, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Controls:MetroWindow}}}"
+                                RenderOptions.EdgeMode="{Binding IconEdgeMode, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Controls:MetroWindow}}}"
+                                Source="{Binding IconTitle, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}" />
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="TitleTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock Margin="8 -1 0 0" VerticalAlignment="Center"
+                                FontFamily="{DynamicResource HeaderFontFamily}"
+                                FontSize="{DynamicResource WindowTitleFontSize}"
+                                Text="{Binding LargeTitle, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}}"
+                                TextTrimming="CharacterEllipsis" />
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Controls:MetroWindow.Style>
+    <Grid>
+
+        <TabControl Style="{StaticResource TabControlLeftStyle}" TabStripPlacement="Left">
+            <TabItem Header="Home" Style="{StaticResource TabItemLeftStyle}">
+                <Pages:TesterPage />
+            </TabItem>
+            <TabItem x:Name="crm1" Header="Empresas" Visibility="Visible"
+                    Style="{StaticResource TabItemLeftStyle}">
+                <Pages:Clientes />
+            </TabItem>
+            <TabItem x:Name="crm2" Header="Contactos" Visibility="Visible"
+                    Style="{StaticResource TabItemLeftStyle}">
+                <Pages:Contactos />
+            </TabItem>
+            <TabItem x:Name="crm3" Header="Técnicos" Visibility="Visible"
+                    Style="{StaticResource TabItemLeftStyle}">
+                <Pages:Tecnicos />
+            </TabItem>
+            <TabItem x:Name="crm4" Header="Parámetros" Visibility="Visible"
+                    Style="{StaticResource TabItemLeftStyle}">
+                <Pages:Parametros />
+            </TabItem>
+            <TabItem x:Name="crm5" Header="Ofertas" Visibility="Visible"
+                    Style="{StaticResource TabItemLeftStyle}">
+                <Pages:Ofertas />
+            </TabItem>
+            <TabItem Header="Ensayo" Style="{StaticResource TabItemLeftStyle}">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Pages:Ensayos />
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+    </Grid>
+
+</Controls:MetroWindow>

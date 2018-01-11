@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="GUI.Pages.Ensayos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GUI.Pages"
+        mc:Ignorable="d" xmlns:gf="clr-namespace:GenericForms.Implemented;assembly=LAE.Comun" Loaded="pageEnsayos_Loaded">
+    <StackPanel Margin="20,20,20,0">
+        <TextBlock Grid.Column="1" FontFamily="Segoe UI Semibold" FontSize="30" HorizontalAlignment="Center"
+                x:Name="textHeader">ENSAYOS</TextBlock>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <ComboBox x:Name="cmbEquipos" Margin="10"/>
+            <Button Content="Nuevo Ensayo" Click="nuevoEnsayo_Click" Grid.Column="1" Margin="10"/>
+        </Grid>
+        <GroupBox Margin="0,20,0,0" Header="Lista Ensayos" MaxHeight="550">
+            
+            <gf:TypeGrid x:Name="gridEnsayos" />
+        </GroupBox>
+    </StackPanel>
+</UserControl>

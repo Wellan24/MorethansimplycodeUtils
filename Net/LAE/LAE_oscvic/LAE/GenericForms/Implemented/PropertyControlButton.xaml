@@ -1,0 +1,15 @@
+﻿<gf:PropertyControl x:Class="GenericForms.Implemented.PropertyControlButton"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
+        xmlns:local="clr-namespace:GenericForms.Implemented" xmlns:gf="clr-namespace:GenericForms.Abstract"
+        Background="White">
+    <Grid>
+        <Button x:Name="btn" Grid.Column="1" Width="30" Height="30" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="4"><!--Click="addTipoMuestra_Click"-->
+            <Path Stretch="Fill" Margin="{Binding Margin ,ElementName=btn}" Fill="#FFFFFF" x:Name="innerPath"
+                     />
+        </Button>
+    </Grid>
+</gf:PropertyControl>

@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="GUI.TreeListView.Tabs.AlicuotasRecepcionAgua"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:GUI.TreeListView.Tabs" mc:Ignorable="d"
+        xmlns:tree="clr-namespace:GUI.TreeListView.Tree" x:Name="ThisControl">
+
+    <UserControl.Resources>
+        <local:RegImageConverter x:Key="RegImageConverter" />
+        <!--<local:DeleteButtonConverter x:Key="DeleteImageConverter" />-->
+    </UserControl.Resources>
+
+    <tree:TreeList x:Name="tree" PreviewMouseLeftButtonDown="tree_PreviewMouseLeftButtonDown"
+            MouseMove="tree_MouseMove" DragEnter="tree_DragEnter" Drop="tree_Drop" AllowDrop="True"
+            DragOver="tree_DragOver" SelectionMode="Single" SelectionChanged="tree_SelectionChanged" PreviewMouseWheel="tree_PreviewMouseWheel">
+        <tree:TreeList.View>
+            <GridView>
+                <GridView.Columns>
+                    <GridViewColumn Width="400" Header="Nombre">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <tree:RowExpander />
+                                    <Image Source="{Binding Converter={StaticResource RegImageConverter}}"
+                                            Margin="0, 0, 5, 0" />
+                                    <TextBlock Text="{Binding Nombre}"></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Conservacion" Width="300"
+                            DisplayMemberBinding="{Binding Conservacion}" />
+                    <!--<GridViewColumn Header="Id" Width="80" DisplayMemberBinding="{Binding Id}" />-->
+                    <!--<GridViewColumn Header="Borrar" x:Name="ColumnBorrar">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Button Click="treeDeleteAlicuota_Click"
+                                            Visibility="{Binding Converter={StaticResource DeleteImageConverter}}" Background="White">
+                                        <Image Source="../Images/close.png"/>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>-->
+                </GridView.Columns>
+            </GridView>
+        </tree:TreeList.View>
+    </tree:TreeList>
+
+</UserControl>

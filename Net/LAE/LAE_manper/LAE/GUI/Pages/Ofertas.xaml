@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="GUI.Pages.Ofertas" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:GUI.Pages"
+        mc:Ignorable="d" xmlns:UControl="clr-namespace:GUI.Controls" x:Name="pageOfertas" Loaded="pageOfertas_Loaded">
+    <Grid x:Name="root">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <UControl:ControlListaOfertas x:Name="UCListaOfertas" Grid.Row="0"/>
+        <UControl:ControlDetalleOferta x:Name="UCDetalleOferta" Visibility="Collapsed" Grid.Row="0"/>
+    </Grid>
+</UserControl>

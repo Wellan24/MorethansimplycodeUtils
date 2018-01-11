@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="GUI.Controls.ControlPesada"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:GUI.Controls"
+        mc:Ignorable="d" xmlns:gf="clr-namespace:GenericForms.Implemented;assembly=LAE.Comun">
+    <StackPanel>
+        <gf:TypePanel x:Name="panelMedicion" />
+        <!--<gf:TypePanel x:Name="panelPesadas" />-->
+        <StackPanel x:Name="listaPesadas">
+            
+        </StackPanel>
+        <Button Content="Calcular" Click="Calcular_Click" />
+        <TextBox x:Name="pesadaMinuto0" />
+
+        <gf:TypePanel x:Name="panelPrueba" />
+        <Button Content="Densidad" Click="Button_Click" />
+        <TextBox x:Name="prueba" />
+    </StackPanel>
+</UserControl>

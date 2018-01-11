@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioWebLAE", "ServicioWebLAE\ServicioWebLAE.csproj", "{9C677609-DB42-4835-9E30-6CC113338325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAE", "LAE\LAE.csproj", "{61DD3713-C7CF-4AD9-A001-2D2700148B45}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D95D24F7-82C0-4CB9-AB89-464A3621086F} = {D95D24F7-82C0-4CB9-AB89-464A3621086F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{6961340D-6C6A-46EF-8187-9EA139B5CDAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Word-Test", "Word-Test\Word-Test.csproj", "{60DB73A3-4590-49E6-99EA-67974C645978}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comun", "Comun\Comun.csproj", "{D95D24F7-82C0-4CB9-AB89-464A3621086F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biomasa", "Biomasa\Biomasa.csproj", "{5B39FC75-00F5-4C95-B679-818E0BCCA872}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C677609-DB42-4835-9E30-6CC113338325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C677609-DB42-4835-9E30-6CC113338325}.Debug|x64.ActiveCfg = Debug|x64
+		{9C677609-DB42-4835-9E30-6CC113338325}.Debug|x64.Build.0 = Debug|x64
+		{9C677609-DB42-4835-9E30-6CC113338325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C677609-DB42-4835-9E30-6CC113338325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C677609-DB42-4835-9E30-6CC113338325}.Release|x64.ActiveCfg = Release|x64
+		{9C677609-DB42-4835-9E30-6CC113338325}.Release|x64.Build.0 = Release|x64
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Debug|x64.ActiveCfg = Debug|x64
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Debug|x64.Build.0 = Debug|x64
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Release|x64.ActiveCfg = Release|x64
+		{61DD3713-C7CF-4AD9-A001-2D2700148B45}.Release|x64.Build.0 = Release|x64
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Debug|x64.ActiveCfg = Debug|x64
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Debug|x64.Build.0 = Debug|x64
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Release|x64.ActiveCfg = Release|x64
+		{6961340D-6C6A-46EF-8187-9EA139B5CDAB}.Release|x64.Build.0 = Release|x64
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Debug|x64.Build.0 = Debug|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Release|x64.ActiveCfg = Release|Any CPU
+		{60DB73A3-4590-49E6-99EA-67974C645978}.Release|x64.Build.0 = Release|Any CPU
+		{D95D24F7-82C0-4CB9-AB89-464A3621086F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95D24F7-82C0-4CB9-AB89-464A3621086F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95D24F7-82C0-4CB9-AB89-464A3621086F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D95D24F7-82C0-4CB9-AB89-464A3621086F}.Debug|x64.Build.0 = Debug|Any CPU
+		{D95D24F7-82C0-4CB9-AB89-464A3621086F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95D24F7-82C0-4CB9-AB89-464A3621086F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95D24F7-82C0-4CB9-AB89-464A3621086F}.Release|x64.ActiveCfg = Release|Any CPU
+		{D95D24F7-82C0-4CB9-AB89-464A3621086F}.Release|x64.Build.0 = Release|Any CPU
+		{5B39FC75-00F5-4C95-B679-818E0BCCA872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B39FC75-00F5-4C95-B679-818E0BCCA872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B39FC75-00F5-4C95-B679-818E0BCCA872}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5B39FC75-00F5-4C95-B679-818E0BCCA872}.Debug|x64.Build.0 = Debug|Any CPU
+		{5B39FC75-00F5-4C95-B679-818E0BCCA872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B39FC75-00F5-4C95-B679-818E0BCCA872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B39FC75-00F5-4C95-B679-818E0BCCA872}.Release|x64.ActiveCfg = Release|Any CPU
+		{5B39FC75-00F5-4C95-B679-818E0BCCA872}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://astrea:8085/tfs/dsi
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ServicioWebLAE\\ServicioWebLAE.csproj
+		SccProjectName1 = ServicioWebLAE
+		SccLocalPath1 = ServicioWebLAE
+		SccProjectUniqueName2 = LAE\\LAE.csproj
+		SccProjectName2 = LAE
+		SccLocalPath2 = LAE
+		SccProjectUniqueName3 = Test\\Test.csproj
+		SccProjectName3 = Test
+		SccLocalPath3 = Test
+		SccProjectUniqueName4 = Word-Test\\Word-Test.csproj
+		SccProjectName4 = Word-Test
+		SccLocalPath4 = Word-Test
+		SccProjectUniqueName5 = Comun\\Comun.csproj
+		SccProjectName5 = Comun
+		SccLocalPath5 = Comun
+		SccProjectUniqueName6 = Biomasa\\Biomasa.csproj
+		SccProjectName6 = Biomasa
+		SccLocalPath6 = Biomasa
+	EndGlobalSection
+EndGlobal

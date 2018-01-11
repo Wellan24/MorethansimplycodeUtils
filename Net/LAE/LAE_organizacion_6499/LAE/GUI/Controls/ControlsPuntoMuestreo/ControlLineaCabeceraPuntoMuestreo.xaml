@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="GUI.Controls.ControlLineaCabeceraPuntoMuestreo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GUI.Controls"
+             mc:Ignorable="d" >
+    <StackPanel Orientation="Horizontal" x:Name="lineaPuntos">
+        <Label VerticalAlignment="Center" FontSize="12" Width="152"
+                BorderBrush="{StaticResource LightColorBrush}" BorderThickness="0,0,2,2" Height="47">Loc. de pun. de muestreo:</Label>
+    </StackPanel>
+</UserControl>

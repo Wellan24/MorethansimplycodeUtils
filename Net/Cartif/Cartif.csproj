@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cartif</RootNamespace>
+    <AssemblyName>Cartif</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>IO\Zip\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\CartifPropertyList.cs" />
+    <Compile Include="Collections\ConcurrentCartifDictionary.cs" />
+    <Compile Include="Collections\TreeNode.cs" />
+    <Compile Include="CustomControls\AbstractButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\AdvancedCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\AdvancedMenuStrip.cs" />
+    <Compile Include="CustomControls\AdvancedTabControl.cs" />
+    <Compile Include="CustomControls\AdvancedToolStripComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ButtonPersonalizado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CartifTableColor.cs" />
+    <Compile Include="CustomControls\CheckBoxPersonalizado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\FormIconButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\FormTextButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\GroupBoxColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\NullableDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EasyDatabase\EasyConnection.cs" />
+    <Compile Include="EasyDatabase\EasyExtensions.cs" />
+    <Compile Include="Expectation\Expectation.cs" />
+    <Compile Include="Expectation\ExpectationBuilder.cs" />
+    <Compile Include="Expectation\ExpectationConverter.cs" />
+    <Compile Include="Expectation\FastExpectation.cs" />
+    <Compile Include="Expectation\AbstractExpectation.cs" />
+    <Compile Include="Expectation\FastExpectationExtensions.cs" />
+    <Compile Include="Expectation\InmutableExpectation.cs" />
+    <Compile Include="Extensions\ArrayExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\DbConnectionExtensions.cs" />
+    <Compile Include="Extensions\DecimalExtensions.cs" />
+    <Compile Include="Extensions\DoubleExtensions.cs" />
+    <Compile Include="Extensions\FileExtensions.cs" />
+    <Compile Include="Extensions\FloatExtensions.cs" />
+    <Compile Include="Extensions\LinqExtensions.cs" />
+    <Compile Include="Extensions\LongExtensions.cs" />
+    <Compile Include="Forms\CartifDialogs.cs" />
+    <Compile Include="Forms\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParentForm.Designer.cs">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ToastStack.cs" />
+    <Compile Include="Extensions\BooleanExtensions.cs" />
+    <Compile Include="Extensions\ControlExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\GraphicsExtensions.cs" />
+    <Compile Include="IO\Overwrite.cs" />
+    <Compile Include="IO\Path.cs" />
+    <Compile Include="IO\PathBase.cs" />
+    <Compile Include="IO\PathConverter.cs" />
+    <Compile Include="IO\Zip\ZipExtensions.cs" />
+    <Compile Include="Logs\CartifLogger.cs" />
+    <Compile Include="Logs\ConsoleLogger.cs" />
+    <Compile Include="Logs\FileLogger.cs" />
+    <Compile Include="Logs\Log.cs" />
+    <Compile Include="Logs\CartifLogs.cs" />
+    <Compile Include="Logs\LogConfiguration.cs" />
+    <Compile Include="Logs\Logger.cs" />
+    <Compile Include="Logs\LoggerConf.cs" />
+    <Compile Include="Logs\TipoLog.cs" />
+    <Compile Include="Logs\TipoLogConf.cs" />
+    <Compile Include="CustomControls\FormTextIconButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\RichTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RichTextControl.Designer.cs">
+      <DependentUpon>RichTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InputDialog.cs" />
+    <Compile Include="UserControls\Toast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Toast.designer.cs">
+      <DependentUpon>Toast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ToastStack.cs" />
+    <Compile Include="Util\BindUtils.cs" />
+    <Compile Include="Util\CartifStopwatch.cs" />
+    <Compile Include="Util\ComboBoxItem.cs" />
+    <Compile Include="Util\ControlUtils.cs" />
+    <Compile Include="Expectation\CompiledExpectation.cs" />
+    <Compile Include="Expectation\ExpectationCriteria.cs" />
+    <Compile Include="Expectation\ExpectationExtensions.cs" />
+    <Compile Include="Util\FileUtils.cs" />
+    <Compile Include="Util\Hash.cs" />
+    <Compile Include="Collections\HashMap.cs" />
+    <Compile Include="Collections\HashMapUtils.cs" />
+    <Compile Include="Collections\Node.cs" />
+    <Compile Include="Util\Optional.cs" />
+    <Compile Include="Util\ReflectionUtils.cs" />
+    <Compile Include="Util\SingletonImages.cs" />
+    <Compile Include="UserControls\Slide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Slide.Designer.cs">
+      <DependentUpon>Slide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SlideButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\SwitchButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\SwitchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SwitchControl.Designer.cs">
+      <DependentUpon>SwitchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Tab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Tab.Designer.cs">
+      <DependentUpon>Tab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TabItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TabItem.Designer.cs">
+      <DependentUpon>TabItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Toast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Toast.Designer.cs">
+      <DependentUpon>Toast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\IntegerExtensions.cs" />
+    <Compile Include="Threading\DefaultQueuedThreadPool.cs" />
+    <Compile Include="Threading\QueuedAction.cs" />
+    <Compile Include="Threading\QueuedThread.cs" />
+    <Compile Include="Threading\QueuedThreadPool.cs" />
+    <Compile Include="Util\DateTimeUtils.cs" />
+    <Compile Include="Collections\CartifDictionary.cs" />
+    <Compile Include="Util\Stack.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\BooleanParser.cs" />
+    <Compile Include="Collections\CollectionComparer.cs" />
+    <Compile Include="Util\StringBuilderCache.cs" />
+    <EmbeddedResource Include="Forms\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParentForm.resx">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RichTextControl.resx">
+      <DependentUpon>RichTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Slide.resx">
+      <DependentUpon>Slide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SwitchControl.resx">
+      <DependentUpon>SwitchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Tab.resx">
+      <DependentUpon>Tab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TabItem.resx">
+      <DependentUpon>TabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Toast.resx">
+      <DependentUpon>Toast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Toast.resx">
+      <DependentUpon>Toast.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

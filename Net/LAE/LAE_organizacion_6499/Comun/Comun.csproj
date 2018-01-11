@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D95D24F7-82C0-4CB9-AB89-464A3621086F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LAE.Comun</RootNamespace>
+    <AssemblyName>LAE.Comun</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.3.0.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.3.0\lib\net45\MahApps.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=3.1.8.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.3.1.8\lib\net451\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.3.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=2.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.2.9\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculos\Calcular.cs" />
+    <Compile Include="Calculos\Conversor.cs" />
+    <Compile Include="Calculos\RegresionLineal.cs" />
+    <Compile Include="Calculos\ResultadoInforme.cs" />
+    <Compile Include="Calculos\Valor.cs" />
+    <Compile Include="Calculos\ValorHumedad.cs" />
+    <Compile Include="Cartif\Collections\CartifDictionary.cs" />
+    <Compile Include="Cartif\Collections\CartifPropertyList.cs" />
+    <Compile Include="Cartif\Collections\CollectionComparer.cs" />
+    <Compile Include="Cartif\Collections\ConcurrentCartifDictionary.cs" />
+    <Compile Include="Cartif\Collections\HashMap.cs" />
+    <Compile Include="Cartif\Collections\HashMapUtils.cs" />
+    <Compile Include="Cartif\Collections\Node.cs" />
+    <Compile Include="Cartif\Collections\TreeNode.cs" />
+    <Compile Include="Cartif\EasyDatabase\EasyConnection.cs" />
+    <Compile Include="Cartif\Expectation\AbstractExpectation.cs" />
+    <Compile Include="Cartif\Expectation\CompiledExpectation.cs" />
+    <Compile Include="Cartif\Expectation\Expectation.cs" />
+    <Compile Include="Cartif\Expectation\ExpectationBuilder.cs" />
+    <Compile Include="Cartif\Expectation\ExpectationConverter.cs" />
+    <Compile Include="Cartif\Expectation\ExpectationCriteria.cs" />
+    <Compile Include="Cartif\Expectation\ExpectationExtensions.cs" />
+    <Compile Include="Cartif\Expectation\FastExpectation.cs" />
+    <Compile Include="Cartif\Expectation\FastExpectationExtensions.cs" />
+    <Compile Include="Cartif\Expectation\InmutableExpectation.cs" />
+    <Compile Include="Cartif\Extensions\ArrayExtensions.cs" />
+    <Compile Include="Cartif\Extensions\BooleanExtensions.cs" />
+    <Compile Include="Cartif\Extensions\CommunicationObjectExtensions.cs" />
+    <Compile Include="Cartif\Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Cartif\Extensions\DbConnectionExtensions.cs" />
+    <Compile Include="Cartif\Extensions\DecimalExtensions.cs" />
+    <Compile Include="Cartif\Extensions\DoubleExtensions.cs" />
+    <Compile Include="Cartif\Extensions\FileExtensions.cs" />
+    <Compile Include="Cartif\Extensions\FloatExtensions.cs" />
+    <Compile Include="Cartif\Extensions\IntegerExtensions.cs" />
+    <Compile Include="Cartif\Extensions\LinqExtensions.cs" />
+    <Compile Include="Cartif\Extensions\LongExtensions.cs" />
+    <Compile Include="Cartif\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Cartif\Extensions\ObservableCollectionExtension.cs" />
+    <Compile Include="Cartif\Extensions\StringExtensions.cs" />
+    <Compile Include="Cartif\IO\Overwrite.cs" />
+    <Compile Include="Cartif\IO\Path.cs" />
+    <Compile Include="Cartif\IO\PathBase.cs" />
+    <Compile Include="Cartif\IO\PathConverter.cs" />
+    <Compile Include="Cartif\Logs\CartifLogger.cs" />
+    <Compile Include="Cartif\Logs\CartifLogs.cs" />
+    <Compile Include="Cartif\Logs\ConsoleLogger.cs" />
+    <Compile Include="Cartif\Logs\FileLogger.cs" />
+    <Compile Include="Cartif\Logs\Log.cs" />
+    <Compile Include="Cartif\Logs\LogConfiguration.cs" />
+    <Compile Include="Cartif\Logs\Logger.cs" />
+    <Compile Include="Cartif\Logs\LoggerConf.cs" />
+    <Compile Include="Cartif\Logs\TipoLog.cs" />
+    <Compile Include="Cartif\Logs\TipoLogConf.cs" />
+    <Compile Include="Cartif\Threading\AsyncJobsListener.cs" />
+    <Compile Include="Cartif\Threading\DefaultQueuedThreadPool.cs" />
+    <Compile Include="Cartif\Threading\QueuedAction.cs" />
+    <Compile Include="Cartif\Threading\QueuedThread.cs" />
+    <Compile Include="Cartif\Threading\QueuedThreadPool.cs" />
+    <Compile Include="Cartif\Util\BindUtils.cs" />
+    <Compile Include="Cartif\Util\BooleanParser.cs" />
+    <Compile Include="Cartif\Util\CartifStopwatch.cs" />
+    <Compile Include="Cartif\Util\ComboBoxItem.cs" />
+    <Compile Include="Cartif\Util\DateTimeUtils.cs" />
+    <Compile Include="Cartif\Util\FileUtils.cs" />
+    <Compile Include="Cartif\Util\Hash.cs" />
+    <Compile Include="Cartif\Util\ReflectionUtils.cs" />
+    <Compile Include="Cartif\Util\SingletonImages.cs" />
+    <Compile Include="Cartif\Util\Stack.cs" />
+    <Compile Include="Cartif\XamlClasses\Messenger.cs" />
+    <Compile Include="Cartif\XamlClasses\ViewModelBase.cs" />
+    <Compile Include="Cartif\XamlResources\CSVPath.cs" />
+    <Compile Include="Documentacion\CeldaTabla.cs" />
+    <Compile Include="Documentacion\Documentacion.cs" />
+    <Compile Include="Documentacion\Escritor.cs" />
+    <Compile Include="Documentacion\FilaTabla.cs" />
+    <Compile Include="Documentacion\RunPropertiesEnum.cs" />
+    <Compile Include="Documentacion\TablaDoc.cs" />
+    <Compile Include="Documentacion\TablePropertiesEnum.cs" />
+    <Compile Include="GenericForms\Abstract\ColumnGridSettings.cs" />
+    <Compile Include="GenericForms\Abstract\FactoryDataGridColumn.cs" />
+    <Compile Include="GenericForms\Abstract\FactoryPropertyControl.cs" />
+    <Compile Include="GenericForms\Abstract\FieldSettings.cs" />
+    <Compile Include="GenericForms\Abstract\GenericValidation.cs" />
+    <Compile Include="GenericForms\Abstract\IPropertyControlSettings.cs" />
+    <Compile Include="GenericForms\Abstract\ITypeGCButtonSettings.cs" />
+    <Compile Include="GenericForms\Abstract\ITypeGCComboSettings.cs" />
+    <Compile Include="GenericForms\Abstract\ITypeGridColumnSettings.cs" />
+    <Compile Include="GenericForms\Abstract\ITypeGridSettings.cs" />
+    <Compile Include="GenericForms\Abstract\ITypePanelSettings.cs" />
+    <Compile Include="GenericForms\Abstract\PropertyControl.cs" />
+    <Compile Include="GenericForms\Implemented\PropertyControlButton.xaml.cs">
+      <DependentUpon>PropertyControlButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericForms\Implemented\PropertyControlCheckBox.xaml.cs">
+      <DependentUpon>PropertyControlCheckBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericForms\Implemented\PropertyControlComboBox.xaml.cs">
+      <DependentUpon>PropertyControlComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericForms\Implemented\PropertyControlComboBoxLarge.xaml.cs">
+      <DependentUpon>PropertyControlComboBoxLarge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericForms\Implemented\PropertyControlDateTime.xaml.cs">
+      <DependentUpon>PropertyControlDateTime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericForms\Implemented\PropertyControlLabel.xaml.cs">
+      <DependentUpon>PropertyControlLabel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericForms\Implemented\PropertyControlTextBox.xaml.cs">
+      <DependentUpon>PropertyControlTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericForms\Implemented\PropertyControlTextBoxLarge.xaml.cs">
+      <DependentUpon>PropertyControlTextBoxLarge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericForms\Implemented\TypeGrid.xaml.cs">
+      <DependentUpon>TypeGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericForms\Implemented\TypePanel.xaml.cs">
+      <DependentUpon>TypePanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenericForms\Settings\PropertyControlSettings.cs" />
+    <Compile Include="GenericForms\Settings\PropertyControlSettingsEnum.cs" />
+    <Compile Include="GenericForms\Settings\TypeGCButtonSettings.cs" />
+    <Compile Include="GenericForms\Settings\TypeGCComboSettings.cs" />
+    <Compile Include="GenericForms\Settings\TypeGridColumnSettings.cs" />
+    <Compile Include="GenericForms\Settings\TypeGridColumnSettingsEnum.cs" />
+    <Compile Include="GenericForms\Settings\TypeGridSettings.cs" />
+    <Compile Include="GenericForms\Settings\TypePanelSettings.cs" />
+    <Compile Include="GenericForms\Settings\ValidateEnum.cs" />
+    <Compile Include="GenericForms\Settings\ValidationsEnum.cs" />
+    <Compile Include="Modelo\Ofertas\LineaPeticion.cs" />
+    <Compile Include="Modelo\Ofertas\LineaRevisionOferta.cs" />
+    <Compile Include="Modelo\Ofertas\Oferta.cs" />
+    <Compile Include="Modelo\Ofertas\Parametro.cs" />
+    <Compile Include="Modelo\Ofertas\Peticion.cs" />
+    <Compile Include="Modelo\Ofertas\PuntoControlPeticion.cs" />
+    <Compile Include="Modelo\Procedimientos\Aceptacion.cs" />
+    <Compile Include="Modelo\Procedimientos\Alcance.cs" />
+    <Compile Include="Modelo\Procedimientos\EnsayoPNT.cs" />
+    <Compile Include="Modelo\Procedimientos\Equipo.cs" />
+    <Compile Include="Modelo\Procedimientos\EquipoEnsayo.cs" />
+    <Compile Include="Modelo\Procedimientos\EquipoMedicion.cs" />
+    <Compile Include="Modelo\Procedimientos\EquipoProcedimiento.cs" />
+    <Compile Include="Modelo\IModelo.cs" />
+    <Compile Include="Modelo\Procedimientos\Incertidumbre.cs" />
+    <Compile Include="Modelo\Procedimientos\MaterialPNT.cs" />
+    <Compile Include="Modelo\Procedimientos\MaterialReferencia.cs" />
+    <Compile Include="Modelo\Procedimientos\MedicionPNT.cs" />
+    <Compile Include="Modelo\Procedimientos\MedicionPNTcci.cs" />
+    <Compile Include="Modelo\Procedimientos\ParametroMaterialPNT.cs" />
+    <Compile Include="Modelo\Procedimientos\ParametroProcedimiento.cs" />
+    <Compile Include="Modelo\Procedimientos\Procedimiento.cs" />
+    <Compile Include="Modelo\Procedimientos\TipoEquipo.cs" />
+    <Compile Include="Modelo\Ofertas\PuntoControlRevision.cs" />
+    <Compile Include="Modelo\Ofertas\RevisionOferta.cs" />
+    <Compile Include="Modelo\Ofertas\TipoMuestra.cs" />
+    <Compile Include="Modelo\Ofertas\TipoMuestraPeticion.cs" />
+    <Compile Include="Modelo\Ofertas\TipoMuestraRevision.cs" />
+    <Compile Include="Modelo\Tecnico.cs" />
+    <Compile Include="Modelo\TipoUnidad.cs" />
+    <Compile Include="Modelo\Trabajo.cs" />
+    <Compile Include="Modelo\Unidades.cs" />
+    <Compile Include="Modelo\Procedimientos\VersionProcedimiento.cs" />
+    <Compile Include="Persistence\Attributes.cs" />
+    <Compile Include="Persistence\CartifService.cs" />
+    <Compile Include="Persistence\ColumnPropertiesInfo.cs" />
+    <Compile Include="Persistence\PersistenceData.cs" />
+    <Compile Include="Persistence\PersistenceDataBase.cs" />
+    <Compile Include="Persistence\PersistenceDataException.cs" />
+    <Compile Include="Persistence\PersistenceDataManipulation.cs" />
+    <Compile Include="Persistence\PersistenceManager.cs" />
+    <Compile Include="Persistence\TablePropertiesInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CartifService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\BlackArrowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\BlackArrowUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\BlackSquareArrowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\BlackSquareArrowUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\close32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\GraySquareArrowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\GraySquareArrowUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\Maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\maximize32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\minimize32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\Plus_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\Refresh-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cartif\images\ui\restore32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Cartif\XamlResources\CartifControlStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cartif\XamlResources\CartifThemeBlack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cartif\XamlResources\CartifThemeCorporate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cartif\XamlResources\ExpanderStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cartif\XamlResources\TabControlStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericForms\Implemented\PropertyControlButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericForms\Implemented\PropertyControlCheckBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericForms\Implemented\PropertyControlComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericForms\Implemented\PropertyControlComboBoxLarge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericForms\Implemented\PropertyControlDateTime.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericForms\Implemented\PropertyControlLabel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericForms\Implemented\PropertyControlTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericForms\Implemented\PropertyControlTextBoxLarge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericForms\Implemented\TypeGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GenericForms\Implemented\TypePanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cartif\XamlControls\" />
+    <Folder Include="Cartif\XamlWindows\" />
+    <Folder Include="Control\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="images\cabecera.psd" />
+    <None Include="images\lae.psd" />
+    <None Include="packages.config" />
+    <None Include="Service References\CartifService\CartifService.wsdl" />
+    <None Include="Service References\CartifService\LAE.Comun.CartifService.LoginLDAPZimbraNoUTFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CartifService\LAE.Comun.CartifService.LoginLDAPZimbraResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CartifService\LAE.Comun.CartifService.LoginPostgresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CartifService\LAE.Comun.CartifService.LoginZimbraResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CartifService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CartifService\CartifService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CartifService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CartifService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CartifService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\cabecera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\lae.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

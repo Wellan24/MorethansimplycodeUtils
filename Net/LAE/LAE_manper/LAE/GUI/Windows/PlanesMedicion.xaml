@@ -1,0 +1,98 @@
+﻿<Controls:MetroWindow x:Class="GUI.Windows.PlanesMedicion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:GUI.Windows" xmlns:gf="clr-namespace:GenericForms.Implemented;assembly=LAE.Comun"
+        mc:Ignorable="d" BorderThickness="1" BorderBrush="Gray" ResizeMode="CanResizeWithGrip"
+        WindowCloseButtonStyle="{StaticResource MetroWindowCloseButtonStyle}"
+        WindowMaxButtonStyle="{StaticResource MetroWindowMaxMinButtonStyle}"
+        WindowMinButtonStyle="{StaticResource MetroWindowMaxMinButtonStyle}" Title="Plan de Medición"
+        Height="900" Width="1200" TitleCaps="False" Icon="pack://application:,,,/LAE.Comun;component/images/lae.png">
+    <Controls:MetroWindow.Style>
+        <Style TargetType="{x:Type Controls:MetroWindow}">
+            <Setter Property="IconTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Controls:MultiFrameImage Width="{TemplateBinding Width}" Margin="2"
+                                Height="{TemplateBinding Height}"
+                                RenderOptions.BitmapScalingMode="{Binding IconBitmapScalingMode, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Controls:MetroWindow}}}"
+                                RenderOptions.EdgeMode="{Binding IconEdgeMode, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Controls:MetroWindow}}}"
+                                Source="{Binding IconTitle, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:PlanesMedicion}}}" />
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Controls:MetroWindow.Style>
+    <ScrollViewer>
+        <StackPanel Margin="20,20,20,0">
+            <TextBlock Grid.Column="1" FontFamily="Segoe UI Semibold" FontSize="30"
+                    HorizontalAlignment="Center" x:Name="textHeader">MUESTREO DE EMISIONES ATMÓSFERICAS</TextBlock>
+            <GroupBox Header="Contacto/Cliente">
+                <StackPanel>
+                    <gf:TypePanel x:Name="panelContacto" />
+                    <gf:TypePanel x:Name="panelCliente" />
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Objetivo de la Medición">
+                <gf:TypePanel x:Name="panelObjetivo" />
+            </GroupBox>
+            <GroupBox Header="Datos de la Instalación">
+                <gf:TypePanel x:Name="panelInstalacion" />
+            </GroupBox>
+            <GroupBox Header="Planificación de la Medición">
+                <StackPanel>
+                    <Border BorderBrush="{StaticResource LightColorBrush}" BorderThickness="2,2,2,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <gf:TypePanel x:Name="panelEquipos" Grid.Column="0" />
+                            <gf:TypeGrid x:Name="gridEquipos" Grid.Column="1" />
+                        </Grid>
+                    </Border>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border BorderBrush="{StaticResource LightColorBrush}" BorderThickness="2"
+                                Grid.Column="0">
+                            <StackPanel Margin="0,0,20,0">
+                                <gf:TypePanel x:Name="panelFechas" />
+                                <gf:TypeGrid x:Name="gridFechas" />
+                            </StackPanel>
+                        </Border>
+                        <Border BorderBrush="{StaticResource LightColorBrush}" BorderThickness="0,2,2,2"
+                                Grid.Column="1">
+                            <StackPanel Margin="20,0,0,0">
+                                <gf:TypePanel x:Name="panelPersonal" />
+                                <gf:TypeGrid x:Name="gridPersonal" />
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Observaciones/Firma">
+                <gf:TypePanel x:Name="panelObservaciones" />
+            </GroupBox>
+            <GroupBox Header="Focos a Medir">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+                    <StackPanel x:Name="listaFocos" />
+                </ScrollViewer>
+            </GroupBox>
+            <Grid Margin="0,0,0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Margin="0,0,5,0" x:Name="bCancelarTomaMuestra" Grid.Column="0" Content="Cancelar"
+                        Click="bCancel_Click" />
+                <Button Margin="5,0,0,0" x:Name="bGuardarTomaMuestra" Grid.Column="1" Content="Guardar"
+                        Click="bGuardar_Click" />
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</Controls:MetroWindow>

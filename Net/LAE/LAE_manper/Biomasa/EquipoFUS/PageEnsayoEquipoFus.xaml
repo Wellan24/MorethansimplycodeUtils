@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="LAE.Biomasa.Pages.PageEnsayoEquipoFus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:LAE.Biomasa.Pages" mc:Ignorable="d"
+        xmlns:gf="clr-namespace:GenericForms.Implemented;assembly=LAE.Comun"
+        xmlns:UControl="clr-namespace:LAE.Biomasa.Controles">
+    <StackPanel>
+        <GroupBox Header="Ensayo Fusibilidad" Margin="20,20,20,20">
+            <StackPanel>
+                <UControl:ControlEnsayo x:Name="UCEnsayo" />
+                <UControl:ControlEquipoEnsayo x:Name="UCEquipos" />
+                <Button x:Name="bGuardar" Content="Guardar" Click="Guardar_Click" />
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</UserControl>

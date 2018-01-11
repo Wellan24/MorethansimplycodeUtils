@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="LAE.Biomasa.Pages.PageDerivaEquipoCHN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:LAE.Biomasa.Pages"
+        mc:Ignorable="d" xmlns:gf="clr-namespace:GenericForms.Implemented;assembly=LAE.Comun">
+    <StackPanel>
+        <gf:TypePanel x:Name="panelEnsayo" />
+        <GroupBox Header="Deriva CHN" Margin="20,20,20,0">
+            <StackPanel>
+                <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">Seleccionar todo</CheckBox>
+                <gf:TypePanel x:Name="panelCHN" />
+                <TextBlock TextDecorations="Underline">Blanco CHN</TextBlock>
+                <gf:TypePanel x:Name="panelBlanco"  HorizontalAlignment="Left" />
+                <TextBlock TextDecorations="Underline">Deriva CHN</TextBlock>
+                <StackPanel x:Name="listaReplicas" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Añadir réplica" Click="Addreplica_Click" Grid.Column="0" Margin="10" />
+                    <Button Content="Eliminar última réplica" Click="Deletereplica_Click" Grid.Column="1"
+                            Margin="10" />
+                </Grid>
+                <gf:TypePanel x:Name="panelDeriva" HorizontalAlignment="Left" />
+                <Button x:Name="bGuardar" Content="Guardar" Click="Guardar_Click" />
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</UserControl>

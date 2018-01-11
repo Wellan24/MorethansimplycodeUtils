@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7884243C-9ED6-4D9E-B935-BDC9EDBB40BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LAE</RootNamespace>
+    <AssemblyName>LAE</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=3.0.5.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.3.0.5\lib\net45\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDatos\DatoLAE.cs" />
+    <Compile Include="BaseDatos\Manager.cs" />
+    <Compile Include="Cartif\Collections\CartifDictionary.cs" />
+    <Compile Include="Cartif\Collections\CartifPropertyList.cs" />
+    <Compile Include="Cartif\Collections\CollectionComparer.cs" />
+    <Compile Include="Cartif\Collections\ConcurrentCartifDictionary.cs" />
+    <Compile Include="Cartif\Collections\HashMap.cs" />
+    <Compile Include="Cartif\Collections\HashMapUtils.cs" />
+    <Compile Include="Cartif\Collections\Node.cs" />
+    <Compile Include="Cartif\Collections\TreeNode.cs" />
+    <Compile Include="Cartif\CustomControls\AbstractButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\CustomControls\AdvancedCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\CustomControls\AdvancedMenuStrip.cs" />
+    <Compile Include="Cartif\CustomControls\AdvancedTabControl.cs" />
+    <Compile Include="Cartif\CustomControls\AdvancedToolStripComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\CustomControls\ButtonPersonalizado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\CustomControls\CartifTableColor.cs" />
+    <Compile Include="Cartif\CustomControls\CheckBoxPersonalizado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\CustomControls\FormIconButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\CustomControls\FormTextButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\CustomControls\GroupBoxColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\CustomControls\NullableDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\EasyDatabase\EasyConnection.cs" />
+    <Compile Include="Cartif\Extensions\ArrayExtensions.cs" />
+    <Compile Include="Cartif\Extensions\BooleanExtensions.cs" />
+    <Compile Include="Cartif\Extensions\ControlExtensions.cs" />
+    <Compile Include="Cartif\Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Cartif\Extensions\DbConnectionExtensions.cs" />
+    <Compile Include="Cartif\Extensions\DecimalExtensions.cs" />
+    <Compile Include="Cartif\Extensions\DoubleExtensions.cs" />
+    <Compile Include="Cartif\Extensions\FileExtensions.cs" />
+    <Compile Include="Cartif\Extensions\FloatExtensions.cs" />
+    <Compile Include="Cartif\Extensions\GraphicsExtensions.cs" />
+    <Compile Include="Cartif\Extensions\IntegerExtensions.cs" />
+    <Compile Include="Cartif\Extensions\LinqExtensions.cs" />
+    <Compile Include="Cartif\Extensions\LongExtensions.cs" />
+    <Compile Include="Cartif\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Cartif\Extensions\StringExtensions.cs" />
+    <Compile Include="Cartif\Forms\CartifDialogs.cs" />
+    <Compile Include="Cartif\Forms\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartif\Forms\InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartif\Forms\InputDialog.cs" />
+    <Compile Include="Cartif\Forms\ParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartif\Forms\ParentForm.Designer.cs">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartif\Forms\Toast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartif\Forms\Toast.Designer.cs">
+      <DependentUpon>Toast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartif\Forms\ToastStack.cs" />
+    <Compile Include="Cartif\IO\Overwrite.cs" />
+    <Compile Include="Cartif\IO\Path.cs" />
+    <Compile Include="Cartif\IO\PathBase.cs" />
+    <Compile Include="Cartif\IO\PathConverter.cs" />
+    <Compile Include="Cartif\Logs\CartifLogger.cs" />
+    <Compile Include="Cartif\Logs\CartifLogs.cs" />
+    <Compile Include="Cartif\Logs\ConsoleLogger.cs" />
+    <Compile Include="Cartif\Logs\FileLogger.cs" />
+    <Compile Include="Cartif\Logs\Log.cs" />
+    <Compile Include="Cartif\Logs\LogConfiguration.cs" />
+    <Compile Include="Cartif\Logs\Logger.cs" />
+    <Compile Include="Cartif\Logs\LoggerConf.cs" />
+    <Compile Include="Cartif\Logs\TipoLog.cs" />
+    <Compile Include="Cartif\Logs\TipoLogConf.cs" />
+    <Compile Include="Cartif\Threading\DefaultQueuedThreadPool.cs" />
+    <Compile Include="Cartif\Threading\QueuedAction.cs" />
+    <Compile Include="Cartif\Threading\QueuedThread.cs" />
+    <Compile Include="Cartif\Threading\QueuedThreadPool.cs" />
+    <Compile Include="Cartif\UserControls\RichTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cartif\UserControls\RichTextControl.Designer.cs">
+      <DependentUpon>RichTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartif\UserControls\Slide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cartif\UserControls\Slide.Designer.cs">
+      <DependentUpon>Slide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartif\UserControls\SlideButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\UserControls\SwitchButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cartif\UserControls\SwitchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cartif\UserControls\SwitchControl.Designer.cs">
+      <DependentUpon>SwitchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartif\UserControls\Tab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cartif\UserControls\Tab.Designer.cs">
+      <DependentUpon>Tab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartif\UserControls\TabItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cartif\UserControls\TabItem.Designer.cs">
+      <DependentUpon>TabItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartif\Util\BooleanParser.cs" />
+    <Compile Include="Cartif\Util\CartifStopwatch.cs" />
+    <Compile Include="Cartif\Util\ControlUtils.cs" />
+    <Compile Include="Cartif\Util\DateTimeUtils.cs" />
+    <Compile Include="Cartif\Util\Expectation.cs" />
+    <Compile Include="Cartif\Util\FileUtils.cs" />
+    <Compile Include="Cartif\Util\Hash.cs" />
+    <Compile Include="Cartif\Util\ReflectionUtils.cs" />
+    <Compile Include="Cartif\Util\SingletonImages.cs" />
+    <Compile Include="Cartif\Util\Stack.cs" />
+    <Compile Include="BaseDatos\BaseDatosLae.cs" />
+    <Compile Include="Forms\Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Prueba.Designer.cs">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Clientes.cs" />
+    <Compile Include="Modelo\Contactos.cs" />
+    <Compile Include="Modelo\LineasOferta.cs" />
+    <Compile Include="Modelo\Muestras.cs" />
+    <Compile Include="Modelo\Ofertas.cs" />
+    <Compile Include="Modelo\Parametros.cs" />
+    <Compile Include="Modelo\Peticiones.cs" />
+    <Compile Include="Modelo\RevisionesOferta.cs" />
+    <Compile Include="Modelo\SolicitudesAceptacion.cs" />
+    <Compile Include="Modelo\Tecnico.cs" />
+    <Compile Include="Modelo\TomaMuestra.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cartif\Forms\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartif\Forms\ParentForm.resx">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartif\Forms\Toast.resx">
+      <DependentUpon>Toast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartif\UserControls\RichTextControl.resx">
+      <DependentUpon>RichTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartif\UserControls\Slide.resx">
+      <DependentUpon>Slide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartif\UserControls\SwitchControl.resx">
+      <DependentUpon>SwitchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartif\UserControls\Tab.resx">
+      <DependentUpon>Tab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartif\UserControls\TabItem.resx">
+      <DependentUpon>TabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Prueba.resx">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Cartif\images\ui\BlackArrowDown.png" />
+    <Content Include="Cartif\images\ui\BlackArrowUp.png" />
+    <Content Include="Cartif\images\ui\BlackSquareArrowDown.png" />
+    <Content Include="Cartif\images\ui\BlackSquareArrowUp.png" />
+    <Content Include="Cartif\images\ui\close.png" />
+    <Content Include="Cartif\images\ui\close32.png" />
+    <Content Include="Cartif\images\ui\GraySquareArrowDown.png" />
+    <Content Include="Cartif\images\ui\GraySquareArrowUp.png" />
+    <Content Include="Cartif\images\ui\Maximize.png" />
+    <Content Include="Cartif\images\ui\maximize32.png" />
+    <Content Include="Cartif\images\ui\Minimize.png" />
+    <Content Include="Cartif\images\ui\minimize32.png" />
+    <Content Include="Cartif\images\ui\Plus_Green.png" />
+    <Content Include="Cartif\images\ui\Refresh-icon.png" />
+    <Content Include="Cartif\images\ui\restore32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

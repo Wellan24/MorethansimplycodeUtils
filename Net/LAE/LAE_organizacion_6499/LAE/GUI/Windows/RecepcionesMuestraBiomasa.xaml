@@ -1,0 +1,58 @@
+﻿<Controls:MetroWindow x:Class="GUI.Windows.RecepcionesMuestraBiomasa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI.Windows" xmlns:gf="clr-namespace:GenericForms.Implemented;assembly=LAE.Comun" mc:Ignorable="d" BorderThickness="1" BorderBrush="Gray"
+        ResizeMode="CanResizeWithGrip" WindowCloseButtonStyle="{StaticResource MetroWindowCloseButtonStyle}"
+        WindowMaxButtonStyle="{StaticResource MetroWindowMaxMinButtonStyle}"
+        WindowMinButtonStyle="{StaticResource MetroWindowMaxMinButtonStyle}" Title="Recepción Muestra Biomasa"
+        Height="900" Width="1200" TitleCaps="False" Icon="/LAE;component/images/lae.png">
+    <Controls:MetroWindow.Style>
+        <Style TargetType="{x:Type Controls:MetroWindow}">
+            <Setter Property="IconTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Controls:MultiFrameImage Width="{TemplateBinding Width}" Margin="2"
+                                Height="{TemplateBinding Height}"
+                                RenderOptions.BitmapScalingMode="{Binding IconBitmapScalingMode, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Controls:MetroWindow}}}"
+                                RenderOptions.EdgeMode="{Binding IconEdgeMode, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Controls:MetroWindow}}}"
+                                Source="{Binding IconTitle, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:RecepcionesMuestraBiomasa}}}" />
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Controls:MetroWindow.Style>
+    <ScrollViewer>
+        <StackPanel Margin="20,20,20,0">
+            <TextBlock Grid.Column="1" FontFamily="Segoe UI Semibold" FontSize="30"
+                    HorizontalAlignment="Center" x:Name="textHeader">RECEPCIÓN E INSPECCIÓN DE MUESTRAS - BIOMASA</TextBlock>
+            <GroupBox Header="Contacto/Cliente">
+                <StackPanel>
+                    <gf:TypePanel x:Name="panelContacto" />
+                    <gf:TypePanel x:Name="panelCliente" />
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Datos de las muestras">
+                <gf:TypePanel x:Name="panelDatos" />
+            </GroupBox>
+            <GroupBox Header="Muestras">
+                <StackPanel x:Name="listaMuestras" />
+            </GroupBox>
+            <GroupBox Header="Observaciones">
+                <gf:TypePanel x:Name="panelObservaciones" />
+            </GroupBox>
+            <Grid Margin="0,0,0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Margin="0,0,5,0" x:Name="bCancelarRecepcionMuestra" Grid.Column="0" Content="Cancelar"
+                        Click="bCancel_Click" />
+                <Button Margin="5,0,0,0" x:Name="bGuardarRecepcionMuestra" Grid.Column="1" Content="Guardar"
+                        Click="bGuardar_Click" />
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</Controls:MetroWindow>

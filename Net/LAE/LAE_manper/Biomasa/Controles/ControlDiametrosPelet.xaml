@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="LAE.Biomasa.Controles.ControlDiametrosPelet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:LAE.Biomasa.Controles"
+        mc:Ignorable="d" xmlns:gf="clr-namespace:GenericForms.Implemented;assembly=LAE.Comun">
+    <Grid>
+        <ItemsControl x:Name="patron">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="10" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label Content="{Binding DiamNumero}" FontWeight="Bold" FontSize="12"></Label>
+                        <TextBox Text="{Binding Medida, UpdateSourceTrigger=PropertyChanged, TargetNullValue=''}" FontSize="12" FontFamily="Segoe UI" TextChanged="TextBox_TextChanged"></TextBox>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </Grid>
+</UserControl>

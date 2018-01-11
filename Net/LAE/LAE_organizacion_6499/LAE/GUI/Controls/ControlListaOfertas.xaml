@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="GUI.Controls.ControlListaOfertas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:GUI.Controls"
+        xmlns:gf="clr-namespace:GenericForms.Implemented;assembly=LAE.Comun" mc:Ignorable="d" x:Name="controlListaOfertas" Loaded="controlListaOfertas_Loaded">
+    <Grid>
+        <StackPanel Margin="20,20,20,0">
+            <TextBlock Grid.Column="1" FontFamily="Segoe UI Semibold" FontSize="30"
+                    HorizontalAlignment="Center" x:Name="textHeader">OFERTAS</TextBlock>
+            <Label Foreground="Red" Margin="20,0,20,-20" x:Name="AvisoOfertaAnulada" Visibility="Hidden">OFERTA ANULADA</Label>
+            <GroupBox Margin="0,20,0,0" Header="Oferta">
+                <StackPanel>
+                    <gf:TypePanel x:Name="panelOfertas" Padding="0,0,10,0" />
+                    <TextBlock Margin="20,0,0,0">
+                        <Hyperlink x:Name="linkVerDetalles">Ver detalles de la oferta</Hyperlink>
+                    </TextBlock>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button Click="GuardarOferta_Click" x:Name="bGuardarOferta" Content="Actualizar"
+                                Margin="10" Grid.Column="0" HorizontalAlignment="Stretch" />
+                        <Button Click="AnularOferta_Click" x:Name="bAnularOferta" Content="Anular" Margin="10"
+                                Grid.Column="1" HorizontalAlignment="Stretch" />
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Lista de ofertas" Margin="0,20,0,0" x:Name="gbListaOfertas">
+                <gf:TypeGrid x:Name="gridOfertas" Margin="10" VerticalAlignment="Stretch"
+                        SelectedItem="{Binding SelectedValue, ElementName=controlListaOfertas, Mode=OneWayToSource}" />
+            </GroupBox>
+            <Button Content="Nueva oferta" HorizontalAlignment="Stretch" Margin="20,20,20,20"
+                    Click="VentanaNuevaOferta_Click" x:Name="bNuevaOferta" />
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="GUI.Pages.Tecnicos" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:GUI.Pages"
+        xmlns:gf="clr-namespace:GenericForms.Implemented" mc:Ignorable="d" Loaded="UserControl_Loaded">
+    <Grid x:Name="rootTecnicos" RenderTransformOrigin="0.675,0.527">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <GroupBox Header="Técnicos" Margin="20,20,20,0" Grid.Row="0">
+            <StackPanel>
+                <gf:TypePanel x:Name="panelTecnicos" Padding="0,0,10,0" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Click="ButtonNuevoCliente_Click" Content="Nuevo" HorizontalAlignment="Stretch"
+                            Margin="10" Grid.Column="0" />
+                    <Button Click="ButtonGuardarCliente_Click" Content="Guardar" HorizontalAlignment="Stretch"
+                            Margin="10" Grid.Column="1" />
+                    <Button Click="ButtonBorrarCliente_Click" Content="Borrar" HorizontalAlignment="Stretch"
+                            Margin="10" Grid.Column="2" />
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Lista Tecnicos" Margin="20,20,20,20" Grid.Row="1">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <gf:TypeGrid x:Name="gridTecnicos" Margin="10" VerticalAlignment="Stretch"
+                        SelectedItem="{Binding InnerValue, ElementName=panelTecnicos, Mode=OneWayToSource}" />
+            </ScrollViewer>
+        </GroupBox>
+    </Grid>
+</UserControl>

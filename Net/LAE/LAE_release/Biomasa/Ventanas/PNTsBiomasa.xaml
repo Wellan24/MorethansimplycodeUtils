@@ -1,0 +1,68 @@
+﻿<Controls:MetroWindow x:Class="LAE.Biomasa.Ventanas.PNTsBiomasa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Pages="clr-namespace:LAE.Biomasa.Pages"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:gf="clr-namespace:GenericForms.Implemented;assembly=LAE.Comun"
+        xmlns:local="clr-namespace:LAE.Biomasa.Ventanas" mc:Ignorable="d" BorderThickness="1" BorderBrush="Gray"
+        ResizeMode="CanResizeWithGrip" WindowCloseButtonStyle="{StaticResource MetroWindowCloseButtonStyle}"
+        WindowMaxButtonStyle="{StaticResource MetroWindowMaxMinButtonStyle}"
+        WindowMinButtonStyle="{StaticResource MetroWindowMaxMinButtonStyle}" Title="Análisis Biomasa" Height="900"
+        Width="1200" MinHeight="900" MinWidth="1200" TitleCaps="False"
+        Icon="pack://application:,,,/LAE.Comun;component/images/lae.png"
+        Closing="MetroWindow_Closing">
+    <Controls:MetroWindow.Style>
+        <Style TargetType="{x:Type Controls:MetroWindow}">
+            <Setter Property="IconTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Controls:MultiFrameImage Width="{TemplateBinding Width}" Margin="2"
+                                Height="{TemplateBinding Height}"
+                                RenderOptions.BitmapScalingMode="{Binding IconBitmapScalingMode, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Controls:MetroWindow}}}"
+                                RenderOptions.EdgeMode="{Binding IconEdgeMode, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Controls:MetroWindow}}}"
+                                Source="{Binding IconTitle, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:PNTsBiomasa}}}" />
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Controls:MetroWindow.Style>
+    <ScrollViewer>
+        <StackPanel>
+            <TabControl>
+                <TabItem Header="HUM" Width="80">
+                    <Pages:PageHumedad x:Name="PageHumedad" />
+                </TabItem>
+                <TabItem Header="HU3" Width="80">
+                    <Pages:PageHumedad3 x:Name="PageHumedad3" />
+                </TabItem>
+                <TabItem Header="CEN" Width="80">
+                    <Pages:PageCenizas x:Name="PageCenizas" />
+                </TabItem>
+                <TabItem Header="CHN" Width="80">
+                    <Pages:PageCHN x:Name="PageCHN" />
+                </TabItem>
+                <TabItem Header="SCl" Width="80">
+                    <Pages:PageSCl x:Name="PageSCl" />
+                </TabItem>
+                <TabItem Header="DEN" Width="80">
+                    <Pages:PageDensidad x:Name="PageDensidad" />
+                </TabItem>
+                <TabItem Header="DUR" Width="80">
+                    <Pages:PageDurabilidad x:Name="PageDurabilidad" />
+                </TabItem>
+                <TabItem Header="TAM" Width="80">
+                    <Pages:PageDimensiones x:Name="PageDimensiones" />
+                </TabItem>
+                <!--<TabItem Header="FUS2" Width="80">
+                    <Pages:PageFusibilidadViejo x:Name="PageFusibilidadViejo" />
+                </TabItem>-->
+                <TabItem Header="FUS" Width="80">
+                    <Pages:PageFusibilidad x:Name="PageFusibilidad" />
+                </TabItem>
+            </TabControl>
+            <Button Content="Guardar" Click="Guardar_Click" Margin="20" />
+        </StackPanel>
+    </ScrollViewer>
+</Controls:MetroWindow>

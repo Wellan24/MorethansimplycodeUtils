@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost/CartifService.asmx/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://localhost/CartifService.asmx/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/CartifService.asmx/">
+      <s:element name="LoginPostgres">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginPostgresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginPostgresResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginZimbra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginZimbraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginZimbraResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginLDAPZimbra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraseña" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginLDAPZimbraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginLDAPZimbraResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginPostgresSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginPostgres" />
+  </wsdl:message>
+  <wsdl:message name="LoginPostgresSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginPostgresResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginZimbraSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginZimbra" />
+  </wsdl:message>
+  <wsdl:message name="LoginZimbraSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginZimbraResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginLDAPZimbraSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginLDAPZimbra" />
+  </wsdl:message>
+  <wsdl:message name="LoginLDAPZimbraSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginLDAPZimbraResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CartifServiceSoap">
+    <wsdl:operation name="LoginPostgres">
+      <wsdl:input message="tns:LoginPostgresSoapIn" />
+      <wsdl:output message="tns:LoginPostgresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginZimbra">
+      <wsdl:input message="tns:LoginZimbraSoapIn" />
+      <wsdl:output message="tns:LoginZimbraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginLDAPZimbra">
+      <wsdl:input message="tns:LoginLDAPZimbraSoapIn" />
+      <wsdl:output message="tns:LoginLDAPZimbraSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CartifServiceSoap" type="tns:CartifServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoginPostgres">
+      <soap:operation soapAction="http://localhost/CartifService.asmx/LoginPostgres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginZimbra">
+      <soap:operation soapAction="http://localhost/CartifService.asmx/LoginZimbra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginLDAPZimbra">
+      <soap:operation soapAction="http://localhost/CartifService.asmx/LoginLDAPZimbra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CartifServiceSoap12" type="tns:CartifServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoginPostgres">
+      <soap12:operation soapAction="http://localhost/CartifService.asmx/LoginPostgres" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginZimbra">
+      <soap12:operation soapAction="http://localhost/CartifService.asmx/LoginZimbra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginLDAPZimbra">
+      <soap12:operation soapAction="http://localhost/CartifService.asmx/LoginLDAPZimbra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CartifService">
+    <wsdl:port name="CartifServiceSoap" binding="tns:CartifServiceSoap">
+      <soap:address location="http://astrea:54956/Servicios/CartifService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CartifServiceSoap12" binding="tns:CartifServiceSoap12">
+      <soap12:address location="http://astrea:54956/Servicios/CartifService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
