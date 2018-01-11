@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartif", "Cartif\Cartif.csproj", "{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCodingHub", "SmartCodingHub\SmartCodingHub.csproj", "{302C6511-D900-4DA4-9DF1-ABBBAE96A0A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartifXaml", "CartifXaml\CartifXaml.csproj", "{C0631D9A-59E4-46BA-9211-654060C6B37F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCodingHub.Xaml", "SmartCodingHub.Xaml\SmartCodingHub.Xaml.csproj", "{C0631D9A-59E4-46BA-9211-654060C6B37F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartif.Persistence", "Cartif.Persistence\Cartif.Persistence.csproj", "{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCodingHub.Persistence", "SmartCodingHub.Persistence\SmartCodingHub.Persistence.csproj", "{FB26AC0C-7B8B-44B3-8075-236480FF3CDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartif35", "Cartif35\Cartif35.csproj", "{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCodingHub35", "SmartCodingHub35\SmartCodingHub35.csproj", "{673A7C75-72CF-4F20-A8AA-040D4FC1AA76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,22 +52,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://astrea:8085/tfs/dsi
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Cartif\\Cartif.csproj
-		SccProjectName1 = Cartif
-		SccLocalPath1 = Cartif
-		SccProjectUniqueName2 = CartifXaml\\CartifXaml.csproj
-		SccProjectName2 = CartifXaml
-		SccLocalPath2 = CartifXaml
-		SccProjectUniqueName3 = Cartif.Persistence\\Cartif.Persistence.csproj
-		SccProjectName3 = Cartif.Persistence
-		SccLocalPath3 = Cartif.Persistence
-		SccProjectUniqueName4 = Cartif35\\Cartif35.csproj
-		SccProjectName4 = Cartif35
-		SccLocalPath4 = Cartif35
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7209EB7B-FD33-4514-814B-86FA27BE304C}
 	EndGlobalSection
 EndGlobal
